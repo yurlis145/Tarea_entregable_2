@@ -1,0 +1,176 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fcebd6;  /* Color suave beige */
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+#encabezado {
+    background: #c62828;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#encabezado nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* SECCIONES */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.titulo-seccion {
+    color: #b71c1c;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ============================
+     CARRUSEL MODERADO
+============================ */
+.carousel {
+    width: 65%;
+    max-width: 720px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0004;
+}
+
+.carousel-inner {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-100%);}
+    50% {transform: translateX(-200%);}
+    75% {transform: translateX(-300%);}
+    100% {transform: translateX(0);}
+}
+
+/* ============================
+   SELECTOR DEL MENÚ
+============================ */
+#select-menu {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: 2px solid #c62828;
+}
+
+/* ============================
+     TARJETA DE PLATO
+============================ */
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    max-width: 350px;
+    margin-inline: auto;
+    box-shadow: 0 4px 12px #0004;
+}
+
+/* 🔥 IMÁGENES DEL MENÚ (MEDIANAS) */
+.tarjeta img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* ============================
+      GALERÍA AUTOMÁTICA
+============================ */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 220px;      /* TAMAÑO MEDIANO */
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0003;
+    transition: transform .3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.06);
+}
+
+/* FORMULARIO */
+.input-text {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #777;
+}
+
+.btn-enviar {
+    background: #c62828;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background: #a81f1f;
+}
+
+/* MENSAJE DE ENVÍO */
+#msg-enviado {
+    margin-top: 12px;
+    font-weight: bold;
+    color: green;
+}
+
+/* MAPA */
+.mapa iframe {
+    width: 90%;
+    max-width: 500px;
+    height: 260px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px #0004;
+}
+
+/* FOOTER */
+#pie {
+    background: #b71c1c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
